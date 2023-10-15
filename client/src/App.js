@@ -17,12 +17,21 @@ useEffect(()=>{
 },[]);
 
 const submitReview = ()=>{
-  Axios.post("http://localhost:3001/api/insert",{movieName:movieName,movieReview: review}).then(()=>{
-    alert("successful insert");
+  Axios.post("http://localhost:3001/api/insert",{
+    movieName:movieName,
+    movieReview: review,
+});
 
-  });
+    setMovieList([
+      ...movieReviewList,
+      {movieNmae: movieName,movieReview:review}]);
+
+  };
 };
 
+const deleteReview=()=>{
+  Axios.delete("http://localhost:3001/api/delete", movieName)
+}
   return (
     <div className="App">
       <h1>CRUD APPLICATION</h1>
@@ -33,18 +42,23 @@ const submitReview = ()=>{
       <label>Review: </label>
       <input type="text"  name="review" onChange={(e)=>{ setReview(e.target.value)}}/>
 
-      <button onClick>Submit</button>
+      <button onClick={submitReview}>Submit</button>
       {movieReviewList.map((val)=>{
 
-        return <h1>
-          MovieName:{val.movieName} | Movie Review: {val.movieReview};
-          </h1>
+        return (
+          <div className="card">
+            <h1>{val.movieName}</h1>
+            <p>{val.movieReview}</p>
 
+            <button>Delete</button>
+            <input type="text" id="updateInput"/> 
+            <button>Upadte</button>
+          </div>
+      );
       })}
 
     </div>
     </div>
   );
-}
 
 export default App;
