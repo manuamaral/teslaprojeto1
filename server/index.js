@@ -29,7 +29,18 @@ app.post("/api/insert", (req,res)=>{
     const movieReview=req.body.movieReview
     const sqlInsert= 
     "INSERT INTO movie_reviews(movieNmae,movieReview) VALUES (?,?)";
-    db.query(sqlInsert,[movieName, movieReview],(err,result)=>{console.log(eresult);
+    db.query(sqlInsert,[movieName, movieReview],(err,result)=>{console.log(result);
+    });
+});
+
+
+app.delete('/api/delete',(req,res)=>{
+    const name=req.body.movieName;
+    const sqlDelete=
+    "DELETE FROM movie_reviews WHERE movieName = ?";//delete from the table where is equal to the movie name,limpa os input sem ter que entrar na string
+
+    db.query(sqlDelete,name, (err,result)=>{
+        if (err) console.log(err)
     });
 });
 
