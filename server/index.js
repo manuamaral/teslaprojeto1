@@ -33,9 +33,18 @@ app.post("/api/insert", (req,res)=>{
     });
 });
 
-
-app.delete('/api/delete',(req,res)=>{
+app.put('/api/update/:movieName',(req,res)=>{
     const name=req.body.movieName;
+    const review=req.body.movieName;
+    const sqlUpdate=
+    "UPDATE movie_reviews SET movieReview = ? WHERE movieName =  ?";//delete from the table where is equal to the movie name,limpa os input sem ter que entrar na string
+
+    db.query(sqlUpdate,[review, name],(err,result)=>{console.log(result);
+    });
+});
+
+app.delete('/api/delete/:movieName',(req,res)=>{
+    const name=req.params.movieName;
     const sqlDelete=
     "DELETE FROM movie_reviews WHERE movieName = ?";//delete from the table where is equal to the movie name,limpa os input sem ter que entrar na string
 
