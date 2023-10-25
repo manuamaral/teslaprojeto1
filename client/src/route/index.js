@@ -1,8 +1,35 @@
-import React from 'react';
+import {Route, Routes, BrowserRouter as Router} from 'react-router-dom'
+import HomePage from '../pages/home/HomePage'
+import Adm from '../pages/Adm/Adm'
+import Critica from '../pages/critica/Critica'
+
+export const RouterApp=()=>{
+    return(
+        <Router>
+            <Routes>
+                
+                <Route path='/' element={<HomePage/>}/>
+                <Route path='/adm' element={<Adm/>}/>
+                <Route path='/criticas/:id' element = {<Critica/>}/>
+                <Route/>
+            </Routes>
+        </Router>
+    )
+}
+
+
+
+
+
+
+
+
+
+
+/*import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Adm from './pages/adm';
 import Inicial from './pages/inicial';
@@ -20,4 +47,4 @@ ReactDOM.render(
             </App>
         </Router>
     ),
-    document.getElementById('root');
+    document.getElementById('root');*/
