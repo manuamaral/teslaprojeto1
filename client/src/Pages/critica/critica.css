@@ -1,0 +1,109 @@
+.sup{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #b3b3b3;
+}
+
+.textinho{
+  font-size: 16px;
+  font-weight: 350;
+}
+
+.filmname{
+  color: aliceblue;
+  font-size: 50px;
+  font-weight: 350;
+}
+
+.informacoes{
+  color: #b3b3b3;
+}
+.mininfo{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  margin: -12px;
+}
+
+.mininfo label{
+  margin-right: 10px;
+  margin-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 0 0 20px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  }
+  */

@@ -1,4 +1,31 @@
-import React, {useState,useEffect } from "react";
+import React from 'react';
+import "./App.css";
+import Adm from'./pages/Adm/Adm';
+import { RouterApp } from '../routes';
+
+
+
+function App() {
+
+  return (
+    <div>
+      <RouterApp/>
+    </div>
+    
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
+
+
+/*import React, {useState,useEffect } from "react";
 import './App.css';
 import Axios from 'axios';
 
@@ -11,7 +38,7 @@ const[movieReviewList,setMovieList]=useState([]);
 const[newReview,setNewReview]=useState("");
 
 
-}
+
 
 
 
@@ -46,5 +73,6 @@ const[newReview,setNewReview]=useState("");
     </div>
     </div>
   );
-
+    }
 export default App;
+*/
