@@ -11,7 +11,7 @@ const[movieReviewList,setMovieList]=useState([]);
 const[newReview,setNewReview]=useState("");
 
 
-}
+
 
 
 
