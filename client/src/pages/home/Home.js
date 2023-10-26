@@ -25,26 +25,27 @@ function Home({ filmes, selecionarFilme }) {
   }
 
   return (
+   <div className="main">
     <div className="Home">
       <select onChange={handleSelecionaFiltro}>
-        <option value="todos">todos</option>
-        <option value="acao">acao</option>
-        <option value="drama">drama</option>
-        <option value="romance">romance</option>
+        <option value="todos">TODOS</option>
+        <option value="acao">Ação</option>
+        <option value="drama">Drama</option>
+        <option value="romance">Romance</option>
       </select>
 
-      <div className="main">
+      
         {filmesFiltrados.map((filme) => (
           <div>
-            <Filme
+            <Filme 
               titulo={filme.titulo}
               imagem={filme.imagem}
               descricao={filme.descricao}
               nota={filme.nota}
             />
 
-            <button onClick={() => HandleClick(filme.id)}>
-              Ir para criticas
+            <button class = "Button" onClick={() => HandleClick(filme.id)}>
+              Ver Críticas
             </button>
           </div>
         ))}

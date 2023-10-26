@@ -4,9 +4,11 @@ import Critica from "../pages/criticas/Criticas";
 import { useState } from "react";
 
 const filmes = [
+  
+
   {
     id: 1,
-    titulo: "Vingadores",
+    titulo: "Carros",
     genero: "acao",
     descricao: "Filme de heroi",
     imagem: "",
@@ -17,7 +19,7 @@ const filmes = [
     titulo: "Filme 2",
     genero: "romance",
     descricao: "Descrição do Filme 2",
-    imagem: "",
+    imagem:"",
     nota: 4,
   },
   {
@@ -53,8 +55,7 @@ const criticas = [
     nome: "Fulano",
     critica: "Perfeito",
     nota: 5,
-    perfil:
-      "https://th.bing.com/th/id/OIP.QjynegEfQVPq5kIEuX9fWQHaFj?pid=ImgDet&rs=1",
+    perfil: "https://th.bing.com/th/id/OIP.QjynegEfQVPq5kIEuX9fWQHaFj?pid=ImgDet&rs=1" ,
   },
 ];
 

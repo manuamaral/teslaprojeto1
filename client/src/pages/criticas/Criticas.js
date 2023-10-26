@@ -7,6 +7,7 @@ function Criticas({criticas, idFilme}) {
   const criticasFiltradas = criticas.filter((critica) => critica.id_filme === idFilme);
 
   return (
+    <div className="main">
     <div className="Criticas">
       {criticasFiltradas.map((critica) => (
           <div>
@@ -20,7 +21,8 @@ function Criticas({criticas, idFilme}) {
             </div>
           </div>
       ))}
-      <button onClick={()=>navigate('/')}>Ir para home</button>
+      <button class = "Button" onClick={()=>navigate('/')}> + Filmes</button>
+    </div>
     </div>
   );
 }

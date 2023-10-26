@@ -1,5 +1,16 @@
 .Filme{
-    display: flex;
+    color: white;
+    height: 70%;
+    border-radius: 12%;
+    background-color: #1C3F60;
+    align-items: center;
     flex-direction: column;
-    border: 2px solid blue;
+    gap: 30px;
+   display: flex;
+   border-width: 1px;
+   width: 13em;
+   height: 21em;    
+   margin: 8px;
+    
+
 }
