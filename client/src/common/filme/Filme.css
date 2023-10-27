@@ -4,13 +4,11 @@
     border-radius: 12%;
     background-color: #1C3F60;
     align-items: center;
-    flex-direction: column;
-    gap: 30px;
-   display: flex;
-   border-width: 1px;
-   width: 13em;
-   height: 21em;    
-   margin: 8px;
-    
-
+    width: 250px;
+    height: 400px;    
+    margin: 8px;
+    margin-bottom: 15px;
+    text-decoration: none;
+   
 }
+

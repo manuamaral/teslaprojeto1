@@ -1,17 +1,19 @@
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import Header from "../header/Header";
 import Home from "../pages/home/Home";
 import Critica from "../pages/criticas/Criticas";
 import { useState } from "react";
+
 
 const filmes = [
   
 
   {
     id: 1,
-    titulo: "Carros",
+    titulo: "Spider-Man",
     genero: "acao",
     descricao: "Filme de heroi",
-    imagem: "",
+    imagem: "https://th.bing.com/th/id/OIP.u6u2PgeTDuvEabQWqNQFDgHaK-?pid=ImgDet&rs=1",
     nota: 5,
   },
   {

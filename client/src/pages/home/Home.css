@@ -6,6 +6,7 @@
     color: #FFFFFF;
     width: 100%; 
     height: 100%;
+    float: center;
 
 }
 .Button{ 
@@ -16,15 +17,38 @@
     font-size: 15px;
     padding: 8px;
     border-width: 1px;  
+    float: center;
   
 }
 
-.Config{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 8px;
+imageStyles{
 
-
+width: 200px;
 
 }
+
+
+.select-container {
+    position: relative;
+    display: inline-block;
+   
+  }
+  
+  .custom-select {
+    width: 150px;
+    padding: 10px;
+    border: 1px solid aqua;
+    border-radius: 4px;
+    background-color: transparent;
+    color: aqua;
+  }
+  
+  /* Estilize a seta do dropdown */
+  .custom-select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }

@@ -7,6 +7,7 @@ function Home({ filmes, selecionarFilme }) {
   const navigate = useNavigate();
   const [genero, setGenero] = useState("todos");
   const [filmesFiltrados, setFilmesFiltrados] = useState(filmes);
+  
 
   function HandleClick(idFilme) {
     selecionarFilme(idFilme);
@@ -25,28 +26,29 @@ function Home({ filmes, selecionarFilme }) {
   }
 
   return (
-   <div className="main">
-    <div className="Home">
-      <select onChange={handleSelecionaFiltro}>
-        <option value="todos">TODOS</option>
+    <div className="main">
+    <div className="select-container">
+      <select class="custom-select"onChange={handleSelecionaFiltro}>
+        <option value="todos">Menu</option>
         <option value="acao">Ação</option>
         <option value="drama">Drama</option>
         <option value="romance">Romance</option>
-      </select>
+      </select> 
 
       
         {filmesFiltrados.map((filme) => (
           <div>
             <Filme 
               titulo={filme.titulo}
-              imagem={filme.imagem}
+              imagem={filme.imagem} 
               descricao={filme.descricao}
               nota={filme.nota}
             />
-
-            <button class = "Button" onClick={() => HandleClick(filme.id)}>
+            <div >
+            <button class = "Button"  onClick={() => HandleClick(filme.id)}>
               Ver Críticas
             </button>
+            </div>
           </div>
         ))}
       </div>
