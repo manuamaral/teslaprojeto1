@@ -1,54 +1,70 @@
+.header {
+  display: flex;
+  justify-content: flex-end; 
+  margin: 10px 0; 
+  flex-direction: column;
+}
+
+
 .main{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items:center;
     background-color: #0B1320 ;
     color: #FFFFFF;
     width: 100%; 
     height: 100%;
-    float: center;
+    flex-direction: column;
+   
 
 }
 .Button{ 
     color: aqua;
+    width: 300px;
     background-color: transparent;
+    align-self: center;
     border-color: aqua;
     border-radius: 20px;
     font-size: 15px;
     padding: 8px;
+  
     border-width: 1px;  
     float: center;
-  
+    
 }
 
-imageStyles{
-
-width: 200px;
-
-}
 
 
 .select-container {
     position: relative;
     display: inline-block;
+    
+    
+  
    
   }
   
   .custom-select {
-    width: 150px;
+    width: 300px;
     padding: 10px;
     border: 1px solid aqua;
-    border-radius: 4px;
+    border-radius: 10px;
     background-color: transparent;
     color: aqua;
+    align-self: baseline;
+    align-self: flex-start;
+    
   }
   
-  /* Estilize a seta do dropdown */
   .custom-select::after {
     content: '\25BC';
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: 300px;
     transform: translateY(-50%);
     pointer-events: none;
+    align-self: flex-start;
+   
   }
+
+ 

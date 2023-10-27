@@ -37,7 +37,7 @@ const filmes = [
 const criticas = [
   {
     id: 1,
-    id_filme: 2,
+    id_filme: 3,
     nome: "Joao",
     critica: "Muito ruim",
     nota: 2,
@@ -45,7 +45,7 @@ const criticas = [
   },
   {
     id: 1,
-    id_filme: 1,
+    id_filme: 3,
     nome: "Maria",
     critica: "Muito bom",
     nota: 4,
@@ -54,7 +54,7 @@ const criticas = [
   {
     id: 1,
     id_filme: 3,
-    nome: "Fulano",
+    nome: "Alberto",
     critica: "Perfeito",
     nota: 5,
     perfil: "https://th.bing.com/th/id/OIP.QjynegEfQVPq5kIEuX9fWQHaFj?pid=ImgDet&rs=1" ,

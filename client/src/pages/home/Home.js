@@ -1,6 +1,6 @@
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
-import Filme from "../../common/filme/Filme";
+import Filme from "../../filme/Filme";
 import { useState } from "react";
 
 function Home({ filmes, selecionarFilme }) {

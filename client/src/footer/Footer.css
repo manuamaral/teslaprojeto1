@@ -1,0 +1,30 @@
+.footer-container {
+    background-color: #0B1320;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid aqua; /* Adicione uma borda superior com a cor desejada */
+    border-bottom: none; /* Adicione uma borda inferior com a cor desejada */
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+ 
+
+.icon {
+    margin: 0 10px; /* Espaçamento entre os ícones */
+    color:aqua ; /* Cor dos ícones */
+    transition: color 0.3s; /* Efeito de transição na cor ao passar o mouse */
+  }
+  
+  .icon:hover {
+    color:#1C3F60; 
+  }
+
+  

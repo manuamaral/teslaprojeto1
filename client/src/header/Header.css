@@ -1,39 +1,58 @@
 
 header {
-    background-color: #333; 
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    gap: 10px;
-  }
+  align-self:center;  
+  height: 80px;
+  width: 80%;
+  border-radius: 90px;
+  margin: 0;
+  padding: 0;
+  font-family: 'elephant';
+  background-color:#0B1320 ;
+  box-shadow: 1px 2px 2px aqua ;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between ;
+  padding:0 ;
+  gap: 40px;
+}
   
   
-  .logo img {
-    max-width: 100px; 
-    height: auto; 
-  }
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
   
   
   .search-bar {
     display: flex;
-    align-items: center; 
-  
+    align-items: center;
+    border: none; 
+    border-radius: 20px; 
+    padding: 10px;
+    height: 30px;
   
   .search-bar input[type="text"] {
-    padding: 5px; 
-    margin-right: 10px; 
-    border: 10px solid #ccc; 
-    border-radius: 10px; }
+  width: 300px;
+  border: 2px solid aqua;; 
+  padding: 10px; 
+  font-size: 16px; 
+  background-color: transparent; 
+  color: aqua; 
+  outline: none; 
+    }
   }
   
   .search-bar button {
-    background-color: #1C3F60; 
-    color: aqua; 
-    padding: 5px 10px; 
-    border: 10px; 
-    border-radius: 5px; 
+  background-color: transparent;
+  color:aqua;
+  border: 2px solid aqua;
+  border-radius: 20px;
+  padding: 8px 16px;
+  margin-left: 10px; /* Espaçamento entre o input e o botão */
+  cursor: pointer;
+  font-size: 16px;
+
   }
   
   
@@ -48,6 +67,7 @@ header {
   
   .menu a {
     text-decoration: none; 
+    font-size: 20px;
     color: #fff; 
     font-weight: bold; 
   }

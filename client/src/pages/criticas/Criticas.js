@@ -10,6 +10,7 @@ function Criticas({criticas, idFilme}) {
   return (
     <div className="main">
     <div className="quadro">
+    <button class = "Button" onClick={()=>navigate('/')}> + Filmes</button>
       {criticasFiltradas.map((critica) => (
           <div className="critica-item" key={critica.id}>
             <div>
@@ -22,7 +23,7 @@ function Criticas({criticas, idFilme}) {
             </div>
           </div>
       ))}
-      <button class = "Button" onClick={()=>navigate('/')}> + Filmes</button>
+      
     </div>
     </div>
   );
