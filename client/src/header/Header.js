@@ -6,7 +6,11 @@ function Header() {
     <div className='main'>
     <header>
       
-        <img className="logo" src="logo_oph.png" alt="Opine Hollywood" />
+    <img
+        src="/logo.png"
+        alt="Logo"
+        className="logo"
+    />
       
       <div className="search-bar">
         <input type="text" placeholder="Pesquisar" />
