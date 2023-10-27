@@ -59,6 +59,7 @@ const criticas = [
     nota: 5,
     perfil: "https://th.bing.com/th/id/OIP.QjynegEfQVPq5kIEuX9fWQHaFj?pid=ImgDet&rs=1" ,
   },
+ 
 ];
 
 export const RouterApp = () => {

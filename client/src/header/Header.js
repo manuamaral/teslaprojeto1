@@ -7,7 +7,7 @@ function Header() {
 
     <header>
       <div className="logo img">
-        <img src="1.png" alt="Opine Hollywood" />
+        <img src="client/src/header/1.png" alt="Opine Hollywood" />
       </div>
 
       <div className="search-bar">
